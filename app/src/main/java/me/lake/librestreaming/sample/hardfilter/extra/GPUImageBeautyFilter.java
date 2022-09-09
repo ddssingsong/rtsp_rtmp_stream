@@ -2,7 +2,8 @@ package me.lake.librestreaming.sample.hardfilter.extra;
 
 import android.content.Context;
 import android.opengl.GLES20;
-import jp.co.cyberagent.android.gpuimage.GPUImageFilter;
+
+import jp.co.cyberagent.android.gpuimage.filter.GPUImageFilter;
 import me.lake.librestreaming.sample.R;
 import me.lake.librestreaming.sample.utils.RecordUtils;
 

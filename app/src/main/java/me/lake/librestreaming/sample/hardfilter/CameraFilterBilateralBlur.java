@@ -1,7 +1,8 @@
 package me.lake.librestreaming.sample.hardfilter;
 
-import jp.co.cyberagent.android.gpuimage.GPUImageBilateralFilter;
-import jp.co.cyberagent.android.gpuimage.GPUImageFilter;
+
+import jp.co.cyberagent.android.gpuimage.filter.GPUImageBilateralBlurFilter;
+import jp.co.cyberagent.android.gpuimage.filter.GPUImageFilter;
 import me.lake.librestreaming.filter.hardvideofilter.BaseHardVideoFilter;
 import me.lake.librestreaming.filter.hardvideofilter.HardVideoGroupFilter;
 import me.lake.librestreaming.sample.hardfilter.extra.GPUImageCompatibleFilter;
@@ -20,7 +21,7 @@ public class CameraFilterBilateralBlur extends HardVideoGroupFilter {
 
     public static CameraFilterBilateralBlur newInstance() {
         ArrayList<BaseHardVideoFilter> filters = new ArrayList<>();
-        filters.add(new GPUImageCompatibleFilter<>(new GPUImageBilateralFilter(6f)));
+        filters.add(new GPUImageCompatibleFilter<>(new GPUImageBilateralBlurFilter(6f)));
         filters.add(new GPUImageCompatibleFilter<>(new GPUImageFilter()));
 
         CameraFilterBilateralBlur bilateralBlur = new CameraFilterBilateralBlur(filters);

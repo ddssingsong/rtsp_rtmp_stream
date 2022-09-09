@@ -1,1 +1,19 @@
-include ':app',':librestreaming', ':liveRecord',':rtspSender'
+
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+
+include ':librestreaming', ':app',':rtspSender'
+rootProject.name = 'rtsp_rtmp_livestream'

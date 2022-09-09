@@ -4,7 +4,8 @@ import android.content.Context;
 import android.content.res.AssetManager;
 import android.graphics.PointF;
 import android.opengl.GLES20;
-import jp.co.cyberagent.android.gpuimage.OpenGlUtils;
+
+import jp.co.cyberagent.android.gpuimage.util.OpenGlUtils;
 import me.lake.librestreaming.filter.hardvideofilter.BaseHardVideoFilter;
 import me.lake.librestreaming.model.RESCoreParameters;
 import me.lake.librestreaming.tools.GLESTools;

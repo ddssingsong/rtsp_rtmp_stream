@@ -20,14 +20,15 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-import jp.co.cyberagent.android.gpuimage.GPUImage3x3ConvolutionFilter;
-import jp.co.cyberagent.android.gpuimage.GPUImage3x3TextureSamplingFilter;
-import jp.co.cyberagent.android.gpuimage.GPUImageCGAColorspaceFilter;
-import jp.co.cyberagent.android.gpuimage.GPUImageColorInvertFilter;
-import jp.co.cyberagent.android.gpuimage.GPUImageCrosshatchFilter;
-import jp.co.cyberagent.android.gpuimage.GPUImageFilter;
-import jp.co.cyberagent.android.gpuimage.GPUImageGrayscaleFilter;
-import jp.co.cyberagent.android.gpuimage.GPUImagePixelationFilter;
+
+import jp.co.cyberagent.android.gpuimage.filter.GPUImage3x3ConvolutionFilter;
+import jp.co.cyberagent.android.gpuimage.filter.GPUImage3x3TextureSamplingFilter;
+import jp.co.cyberagent.android.gpuimage.filter.GPUImageCGAColorspaceFilter;
+import jp.co.cyberagent.android.gpuimage.filter.GPUImageColorInvertFilter;
+import jp.co.cyberagent.android.gpuimage.filter.GPUImageCrosshatchFilter;
+import jp.co.cyberagent.android.gpuimage.filter.GPUImageFilter;
+import jp.co.cyberagent.android.gpuimage.filter.GPUImageGrayscaleFilter;
+import jp.co.cyberagent.android.gpuimage.filter.GPUImagePixelationFilter;
 import me.lake.librestreaming.filter.hardvideofilter.BaseHardVideoFilter;
 import me.lake.librestreaming.filter.hardvideofilter.HardVideoGroupFilter;
 import me.lake.librestreaming.filter.hardvideofilter.OriginalHardVideoFilter;
